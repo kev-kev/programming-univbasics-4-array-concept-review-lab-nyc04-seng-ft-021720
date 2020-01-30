@@ -10,7 +10,7 @@ end
 def find_max_value(array)
   #can't just sort and do array[-1]
   #need to iterate over the array and evaluate at each index and see if the value is greater than the index before
-  x = 0
+  x = array[0]
   array.length.times { |i|
     if array[i] > x
       x = array[i]
@@ -18,6 +18,7 @@ def find_max_value(array)
   }
   x
 end
+
 
 
 def find_min_value(array)

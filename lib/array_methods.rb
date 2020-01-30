@@ -4,7 +4,7 @@ def find_element_index(array, value_to_find)
   unless array[i] = value_to_find do
     i ++
   end
-  return array[i]
+  return i
 end
 
 

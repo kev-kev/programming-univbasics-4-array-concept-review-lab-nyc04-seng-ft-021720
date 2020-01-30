@@ -10,11 +10,13 @@ end
 def find_max_value(array)
   #can't just sort and do array[-1]
   #need to iterate over the array and evaluate at each index and see if the value is greater than the index before
+  x = 0
   array.length.time do |i|
-    if array[i]
-      
+    if array[i] > x
+      array[i] = x
     end
   end
+  x
 end
 
 

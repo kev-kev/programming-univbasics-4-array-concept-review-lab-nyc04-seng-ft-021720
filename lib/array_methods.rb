@@ -21,6 +21,8 @@ end
 
 
 def find_min_value(array)
+  #can take the find_max_value method and switch the sign
+  #if we do that, we need to change the value of x, since 0 would be less than any element in an array of integers.
   x = array[0]
   array.length.times { |i|
     if array[i] < x
